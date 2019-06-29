@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6f4ddc8-76e7-4403-babf-ae753c7e6421" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../superlists/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../superlists/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../superlists/.idea/superlists.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../superlists/.idea/superlists.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../superlists/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../superlists/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../superlists/lists/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../superlists/lists/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../superlists/lists/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../superlists/lists/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../superlists/superlists/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../superlists/superlists/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../superlists/lists/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="254">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -32,7 +34,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../superlists/superlists/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="324">
               <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
               <folding>
                 <element signature="e#634#666#0" expanded="true" />
@@ -42,10 +44,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../superlists/lists/views.py">
+        <entry file="file://$PROJECT_DIR$/../superlists/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+              <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../superlists/lists/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,7 +79,9 @@
         <option value="$PROJECT_DIR$/superlists/lists/views.py" />
         <option value="$PROJECT_DIR$/superlists/superlists/urls.py" />
         <option value="$PROJECT_DIR$/../superlists/superlists/urls.py" />
+        <option value="$PROJECT_DIR$/../superlists/lists/tests.py" />
         <option value="$PROJECT_DIR$/../superlists/lists/views.py" />
+        <option value="$PROJECT_DIR$/../superlists/.gitignore" />
       </list>
     </option>
   </component>
@@ -88,11 +104,6 @@
               <item name="superlists" type="b2602c69:ProjectViewProjectNode" />
               <item name="superlists" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="superlists" type="b2602c69:ProjectViewProjectNode" />
-              <item name="superlists" type="462c0819:PsiDirectoryNode" />
-              <item name="superlists" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -102,13 +113,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../superlists" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../superlists/superlists/settings.py" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -205,7 +216,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="superlists.settings" />
       </envs>
-      <option name="SDK_HOME" value="/usr/bin/python3.7" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../superlists/.venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -294,12 +305,12 @@
       <workItem from="1561751455248" duration="1480000" />
       <workItem from="1561755646201" duration="2992000" />
       <workItem from="1561798386953" duration="2007000" />
-      <workItem from="1561810935578" duration="3165000" />
+      <workItem from="1561810935578" duration="5455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9644000" />
+    <option name="totallyTimeSpent" value="11934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="36" width="1328" height="732" extended-state="6" />
@@ -310,7 +321,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32888147" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.327212" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32554257" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -319,7 +330,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.36894825" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.6761269" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -337,13 +348,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../superlists/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -379,17 +383,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../superlists/lists/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="254">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../superlists/lists/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../superlists/superlists/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
+        <state relative-caret-position="324">
           <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
           <folding>
             <element signature="e#634#666#0" expanded="true" />
@@ -397,10 +411,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../superlists/lists/views.py">
+    <entry file="file://$PROJECT_DIR$/../superlists/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
         </state>
       </provider>
     </entry>
