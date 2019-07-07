@@ -1,8 +1,11 @@
 from selenium import webdriver
+from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.common.keys import Keys
 import time
 
 from django.test import LiveServerTestCase
+
+MAX_WAIT = 10
 
 
 class NewVisitorTest(LiveServerTestCase):
@@ -13,14 +16,24 @@ class NewVisitorTest(LiveServerTestCase):
     def tearDown(self):
         self.browser.quit()
 
-    def check_for_row_in_table_list(self, row_text):
-        table = self.browser.find_element_by_id('id_list_table')
-        rows = table.find_elements_by_tag_name('tr')
-        item_list = [row.text for row in rows]
-        self.assertIn(
-            row_text, item_list,
-            f"New to-do item did not appear in table. Contents were:\n{table.text}"
-        )
+    def wait_for_row_in_list_table(self, row_text):
+        start_time = time.time()
+
+        while True:
+            try:
+                table = self.browser.find_element_by_id('id_list_table')
+                rows = table.find_elements_by_tag_name('tr')
+                item_list = [row.text for row in rows]
+                self.assertIn(
+                    row_text, item_list,
+                    f"New to-do item did not appear in table. Contents were:\n{table.text}"
+                )
+                return
+            except (WebDriverException, AssertionError) as e:
+                current_time = time.time()
+                if current_time - start_time > MAX_WAIT:
+                    raise e
+                time.sleep(0.5)
 
     def test_can_start_a_list_and_retrieve_it_later(self):
         # Edith has heard about a cool new online to-do app. She goes
@@ -48,18 +61,17 @@ class NewVisitorTest(LiveServerTestCase):
         input_box.send_keys(Keys.ENTER)
         time.sleep(1)
 
-        self.check_for_row_in_table_list('1: Buy peacock feathers')
+        self.wait_for_row_in_list_table('1: Buy peacock feathers')
 
         # There is still a text box inviting her to add another item. She
         # enters "Use peacock feathers to make a fly" (Edith is very methodical)
         input_box = self.browser.find_element_by_id('id_new_item')
         input_box.send_keys("Use peacock feathers to make a fly")
         input_box.send_keys(Keys.ENTER)
-        time.sleep(1)
 
         # The page updates again, and now shows both items on her list
-        self.check_for_row_in_table_list('1: Buy peacock feathers')
-        self.check_for_row_in_table_list('2: Use peacock feathers to make a fly')
+        self.wait_for_row_in_list_table('2: Use peacock feathers to make a fly')
+        self.wait_for_row_in_list_table('1: Buy peacock feathers')
 
         self.fail('finish the test')
 
